@@ -6,11 +6,11 @@
 
 
 <%-- DXCOMMENT: Configure your datasource for ASPxGridView --%>
-    <dx:ASPxGridView ID="ASPxGridViewMaster" runat="server" AutoGenerateColumns="False" DataSourceID="dsProject" KeyFieldName="Project_ID" Width="90%" EnableTheming="True" Theme="Office2010Silver">
+    <dx:ASPxGridView ID="ASPxGridViewMaster" runat="server" AutoGenerateColumns="False" DataSourceID="dsProject" KeyFieldName="Project_ID" Width="90%" EnableTheming="True" Theme="Glass">
         <SettingsDetail ShowDetailRow="True" />
         <Templates>
             <DetailRow>
-                <dx:ASPxPageControl ID="ASPxPageControl1" runat="server" ActiveTabIndex="0" EnableTheming="True" Theme="Office2010Silver">
+                <dx:ASPxPageControl ID="ASPxPageControl1" runat="server" ActiveTabIndex="1" EnableTheming="True" Theme="Glass">
                     <TabPages>
                         <dx:TabPage Name="Tilbud" Text="Tilbud">
                             <ContentCollection>
@@ -58,59 +58,119 @@
                                         <SettingsSearchPanel Visible="True" />
                                         <Columns>
                                             <dx:GridViewCommandColumn ShowInCustomizationForm="True" ShowNewButton="True" ShowNewButtonInHeader="True" VisibleIndex="0">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewCommandColumn>
                                             <dx:GridViewDataTextColumn FieldName="Quote_ID" ReadOnly="True" ShowInCustomizationForm="True" Visible="False" VisibleIndex="1">
                                                 <EditFormSettings Visible="False" />
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="Project_ID" ShowInCustomizationForm="True" Visible="False" VisibleIndex="2">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn Caption="Tilbud" FieldName="Quote_No" ShowInCustomizationForm="True" VisibleIndex="3">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataDateColumn Caption="Opprettet" FieldName="Quote_Date" ShowInCustomizationForm="True" VisibleIndex="7">
                                                 <SettingsHeaderFilter Mode="DateRangeCalendar">
                                                 </SettingsHeaderFilter>
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataDateColumn>
                                             <dx:GridViewDataTextColumn Caption="Pris" FieldName="Quote_Price" ShowInCustomizationForm="True" VisibleIndex="8">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn Caption="Antall" FieldName="Quantity" ShowInCustomizationForm="True" VisibleIndex="10">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn Caption="ProdTimer" FieldName="ProdHours" ShowInCustomizationForm="True" VisibleIndex="11">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataDateColumn Caption="Følges opp" FieldName="FollowUpDate" ShowInCustomizationForm="True" VisibleIndex="12">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataDateColumn>
                                             <dx:GridViewDataCheckColumn FieldName="Anbud" ShowInCustomizationForm="True" VisibleIndex="13">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataCheckColumn>
                                             <dx:GridViewDataDateColumn Caption="Sendt" FieldName="Sent_Date" ShowInCustomizationForm="True" VisibleIndex="15">
                                                 <SettingsHeaderFilter Mode="DateRangeCalendar">
                                                 </SettingsHeaderFilter>
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataDateColumn>
                                             <dx:GridViewDataTextColumn FieldName="PartPrice" ShowInCustomizationForm="True" Visible="False" VisibleIndex="16">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataDateColumn FieldName="LastModification" ShowInCustomizationForm="True" Visible="False" VisibleIndex="17">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataDateColumn>
                                             <dx:GridViewDataTextColumn FieldName="Contact_ID" ShowInCustomizationForm="True" Visible="False" VisibleIndex="18">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="ShippingCost" ShowInCustomizationForm="True" Visible="False" VisibleIndex="19">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataProgressBarColumn FieldName="Sannsynlighet" ShowInCustomizationForm="True" VisibleIndex="4">
                                                 <PropertiesProgressBar DisplayFormatString="">
                                                 </PropertiesProgressBar>
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataProgressBarColumn>
                                             <dx:GridViewDataComboBoxColumn Caption="Kunde" FieldName="Customer_ID" ShowInCustomizationForm="True" VisibleIndex="5">
                                                 <PropertiesComboBox DataSourceID="dsCustomers" TextField="Company_Name" ValueField="Customer_ID">
                                                 </PropertiesComboBox>
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataComboBoxColumn>
                                             <dx:GridViewDataComboBoxColumn Caption="Selger" FieldName="Employee_ID" ShowInCustomizationForm="True" VisibleIndex="6">
                                                 <PropertiesComboBox DataSourceID="dsEmployee" TextField="Initials" ValueField="Employee_ID">
                                                 </PropertiesComboBox>
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataComboBoxColumn>
                                             <dx:GridViewDataComboBoxColumn Caption="Produkt" FieldName="Product" ShowInCustomizationForm="True" VisibleIndex="9">
                                                 <PropertiesComboBox DataSourceID="dsProducts" TextField="Name" ValueField="ProductID">
                                                 </PropertiesComboBox>
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataComboBoxColumn>
                                             <dx:GridViewDataComboBoxColumn Caption="Status" FieldName="Quote_Status_ID" ShowInCustomizationForm="True" VisibleIndex="14">
                                                 <PropertiesComboBox DataSourceID="dsStatus" TextField="Status_Text" ValueField="Quote_Status_ID">
                                                 </PropertiesComboBox>
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataComboBoxColumn>
                                         </Columns>
                                     </dx:ASPxGridView>
@@ -120,52 +180,118 @@
                         <dx:TabPage Name="Ordre" Text="Ordre">
                             <ContentCollection>
                                 <dx:ContentControl runat="server">
-                                    <dx:ASPxGridView ID="ASPxGridViewDetail_Orders" runat="server" AutoGenerateColumns="False" DataSourceID="dsOrders" KeyFieldName="Order_ID" OnBeforePerformDataSelect="ASPxGridViewDetail_Orders_BeforePerformDataSelect">
+                                    <dx:ASPxGridView ID="ASPxGridViewDetail_Orders" runat="server" AutoGenerateColumns="False" DataSourceID="dsOrders" KeyFieldName="Order_ID" OnBeforePerformDataSelect="ASPxGridViewDetail_Orders_BeforePerformDataSelect" EnableTheming="True" Theme="Glass">
                                         <Columns>
                                             <dx:GridViewDataTextColumn FieldName="Order_ID" ReadOnly="True" ShowInCustomizationForm="True" Visible="False" VisibleIndex="0">
                                                 <EditFormSettings Visible="False" />
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="Project_ID" ShowInCustomizationForm="True" Visible="False" VisibleIndex="1">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="Order_Status_ID" ShowInCustomizationForm="True" VisibleIndex="2">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="Employee_ID" ShowInCustomizationForm="True" VisibleIndex="3">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataDateColumn FieldName="OrderCreated" ShowInCustomizationForm="True" VisibleIndex="4">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataDateColumn>
                                             <dx:GridViewDataDateColumn FieldName="Deadline_Date" ShowInCustomizationForm="True" VisibleIndex="5">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataDateColumn>
                                             <dx:GridViewDataDateColumn FieldName="Shipped_Date" ShowInCustomizationForm="True" VisibleIndex="6">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataDateColumn>
                                             <dx:GridViewDataTextColumn FieldName="Ship_With" ShowInCustomizationForm="True" Visible="False" VisibleIndex="7">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="Ship_Name" ShowInCustomizationForm="True" Visible="False" VisibleIndex="8">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="Ship_Address" ShowInCustomizationForm="True" Visible="False" VisibleIndex="9">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="Ship_PostalCode" ShowInCustomizationForm="True" Visible="False" VisibleIndex="10">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="Ship_City" ShowInCustomizationForm="True" Visible="False" VisibleIndex="11">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="Ship_Country" ShowInCustomizationForm="True" Visible="False" VisibleIndex="12">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="Quote_ID" ShowInCustomizationForm="True" Visible="False" VisibleIndex="13">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="Order_Price" ShowInCustomizationForm="True" VisibleIndex="14">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="ProdHours" ShowInCustomizationForm="True" VisibleIndex="15">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="Product" ShowInCustomizationForm="True" VisibleIndex="16">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="Quantity" ShowInCustomizationForm="True" VisibleIndex="17">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="Kommentar" ShowInCustomizationForm="True" VisibleIndex="18">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataTextColumn FieldName="Order_No" ShowInCustomizationForm="True" VisibleIndex="19">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataTextColumn>
                                             <dx:GridViewDataCheckColumn FieldName="StatusChanged" ShowInCustomizationForm="True" Visible="False" VisibleIndex="20">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataCheckColumn>
                                             <dx:GridViewDataDateColumn FieldName="LastChange" ShowInCustomizationForm="True" VisibleIndex="21">
+                                                <CellStyle HorizontalAlign="Left">
+                                                    <Border BorderStyle="None" />
+                                                </CellStyle>
                                             </dx:GridViewDataDateColumn>
                                         </Columns>
                                     </dx:ASPxGridView>
@@ -176,6 +302,8 @@
                 </dx:ASPxPageControl>
             </DetailRow>
         </Templates>
+        <SettingsPager PageSize="22">
+        </SettingsPager>
         <SettingsEditing Mode="Batch">
             <BatchEditSettings StartEditAction="DblClick" />
         </SettingsEditing>
@@ -183,14 +311,26 @@
         <Columns>
             <dx:GridViewDataTextColumn Caption="ID" FieldName="Project_ID" ReadOnly="True" VisibleIndex="0">
                 <EditFormSettings Visible="False" />
+                <CellStyle HorizontalAlign="Left">
+                    <Border BorderStyle="None" />
+                </CellStyle>
             </dx:GridViewDataTextColumn>
             <dx:GridViewDataDateColumn FieldName="DateCreated" VisibleIndex="3">
+                <CellStyle HorizontalAlign="Left">
+                    <Border BorderStyle="None" />
+                </CellStyle>
             </dx:GridViewDataDateColumn>
             <dx:GridViewDataTextColumn Caption="Navn" FieldName="Name" VisibleIndex="1">
+                <CellStyle HorizontalAlign="Left">
+                    <Border BorderStyle="None" />
+                </CellStyle>
             </dx:GridViewDataTextColumn>
             <dx:GridViewDataComboBoxColumn Caption="Teknisk" FieldName="Employee_ID" VisibleIndex="2">
                 <PropertiesComboBox DataSourceID="dsEmployee" TextField="Initials" ValueField="Employee_ID">
                 </PropertiesComboBox>
+                <CellStyle HorizontalAlign="Left">
+                    <Border BorderStyle="None" />
+                </CellStyle>
             </dx:GridViewDataComboBoxColumn>
         </Columns>
     </dx:ASPxGridView>
