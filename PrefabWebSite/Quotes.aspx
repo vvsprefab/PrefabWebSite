@@ -4,6 +4,7 @@
         <SettingsEditing Mode="Batch">
             <BatchEditSettings StartEditAction="DblClick" />
         </SettingsEditing>
+        <Settings ShowHeaderFilterButton="True" />
         <SettingsBehavior AllowFocusedRow="True" AllowSelectByRowClick="True" />
         <SettingsSearchPanel Visible="True" />
         <Columns>
@@ -16,18 +17,16 @@
                 <CellStyle HorizontalAlign="Left">
                 </CellStyle>
             </dx:GridViewDataTextColumn>
-            <dx:GridViewDataTextColumn Caption="ID" FieldName="Project_ID" ShowInCustomizationForm="True" SortIndex="0" SortOrder="Descending" VisibleIndex="2">
-                <CellStyle HorizontalAlign="Left">
-                </CellStyle>
-            </dx:GridViewDataTextColumn>
             <dx:GridViewDataDateColumn Caption="Laget" FieldName="Quote_Date" ShowInCustomizationForm="True" VisibleIndex="9">
                 <PropertiesDateEdit DisplayFormatString="dd. MMM yy">
                 </PropertiesDateEdit>
+                <SettingsHeaderFilter Mode="DateRangeCalendar">
+                </SettingsHeaderFilter>
                 <CellStyle HorizontalAlign="Left">
                 </CellStyle>
             </dx:GridViewDataDateColumn>
             <dx:GridViewDataTextColumn Caption="Pris" FieldName="Quote_Price" ShowInCustomizationForm="True" VisibleIndex="10">
-                <PropertiesTextEdit DisplayFormatString="n">
+                <PropertiesTextEdit DisplayFormatInEditMode="True" DisplayFormatString="n">
                 </PropertiesTextEdit>
                 <CellStyle HorizontalAlign="Left">
                 </CellStyle>
@@ -43,6 +42,8 @@
             <dx:GridViewDataDateColumn Caption="Følges opp" FieldName="FollowUpDate" ShowInCustomizationForm="True" VisibleIndex="14">
                 <PropertiesDateEdit DisplayFormatString="dd. MMM yy">
                 </PropertiesDateEdit>
+                <SettingsHeaderFilter Mode="DateRangeCalendar">
+                </SettingsHeaderFilter>
                 <CellStyle HorizontalAlign="Left">
                 </CellStyle>
             </dx:GridViewDataDateColumn>
@@ -53,6 +54,8 @@
             <dx:GridViewDataDateColumn Caption="Sendt" FieldName="Sent_Date" ShowInCustomizationForm="True" VisibleIndex="17">
                 <PropertiesDateEdit DisplayFormatString="dd. MMM yy">
                 </PropertiesDateEdit>
+                <SettingsHeaderFilter Mode="DateRangeCalendar">
+                </SettingsHeaderFilter>
                 <CellStyle HorizontalAlign="Left">
                 </CellStyle>
             </dx:GridViewDataDateColumn>
@@ -63,6 +66,8 @@
             <dx:GridViewDataDateColumn FieldName="LastModification" ShowInCustomizationForm="True" Visible="False" VisibleIndex="19">
                 <PropertiesDateEdit DisplayFormatString="dd. MMM yy">
                 </PropertiesDateEdit>
+                <SettingsHeaderFilter Mode="DateRangeCalendar">
+                </SettingsHeaderFilter>
                 <CellStyle HorizontalAlign="Left">
                 </CellStyle>
             </dx:GridViewDataDateColumn>
@@ -74,7 +79,7 @@
                 <CellStyle HorizontalAlign="Left">
                 </CellStyle>
             </dx:GridViewDataTextColumn>
-            <dx:GridViewDataTextColumn Caption="Navn" FieldName="Name" ShowInCustomizationForm="True" VisibleIndex="3">
+            <dx:GridViewDataTextColumn Caption="Navn" FieldName="Name" ReadOnly="True" ShowInCustomizationForm="True" VisibleIndex="3">
                 <CellStyle HorizontalAlign="Left">
                 </CellStyle>
             </dx:GridViewDataTextColumn>
@@ -85,10 +90,8 @@
                 </CellStyle>
             </dx:GridViewDataProgressBarColumn>
             <dx:GridViewDataComboBoxColumn Caption="Selger" FieldName="Employee_ID" ShowInCustomizationForm="True" VisibleIndex="8">
-                <CellStyle HorizontalAlign="Left">
-                </CellStyle>
-            </dx:GridViewDataComboBoxColumn>
-            <dx:GridViewDataComboBoxColumn Caption="Teknisk" FieldName="Employee_ID1" ShowInCustomizationForm="True" VisibleIndex="5">
+                <PropertiesComboBox DataSourceID="dsEmployee" TextField="Initials" ValueField="Employee_ID">
+                </PropertiesComboBox>
                 <CellStyle HorizontalAlign="Left">
                 </CellStyle>
             </dx:GridViewDataComboBoxColumn>
@@ -112,6 +115,18 @@
             </dx:GridViewDataComboBoxColumn>
             <dx:GridViewDataComboBoxColumn Caption="Status" FieldName="Quote_Status_ID" VisibleIndex="16">
                 <PropertiesComboBox DataSourceID="dsStatus" TextField="Status_Text" ValueField="Quote_Status_ID">
+                </PropertiesComboBox>
+                <CellStyle HorizontalAlign="Left">
+                </CellStyle>
+            </dx:GridViewDataComboBoxColumn>
+            <dx:GridViewDataComboBoxColumn Caption="Teknisk" FieldName="Employee_ID1" ReadOnly="True" VisibleIndex="5">
+                <PropertiesComboBox DataSourceID="dsEmployee" TextField="Initials" ValueField="Employee_ID">
+                </PropertiesComboBox>
+                <CellStyle HorizontalAlign="Left">
+                </CellStyle>
+            </dx:GridViewDataComboBoxColumn>
+            <dx:GridViewDataComboBoxColumn Caption="ID" FieldName="Project_ID" ReadOnly="True" SortIndex="0" SortOrder="Descending" VisibleIndex="2">
+                <PropertiesComboBox DataSourceID="dsProject" TextField="Name" ValueField="Project_ID">
                 </PropertiesComboBox>
                 <CellStyle HorizontalAlign="Left">
                 </CellStyle>
