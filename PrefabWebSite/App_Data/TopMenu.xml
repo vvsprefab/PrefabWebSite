@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+  <item Text="Prosjekter" NavigateUrl="Projects.aspx" />
+  <item Text="Tilbud" NavigateUrl="Quotes.aspx"  />
+  
+</items>
