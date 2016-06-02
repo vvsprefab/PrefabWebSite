@@ -5,7 +5,7 @@
         </SettingsPager>
         <SettingsEditing Mode="Inline">
         </SettingsEditing>
-        <Settings ShowHeaderFilterButton="True" />
+        <Settings ShowHeaderFilterButton="True" VerticalScrollableHeight="150" />
         <SettingsBehavior AllowFocusedRow="True" />
         <SettingsDataSecurity AllowDelete="False" />
         <SettingsSearchPanel Delay="600" Visible="True" />

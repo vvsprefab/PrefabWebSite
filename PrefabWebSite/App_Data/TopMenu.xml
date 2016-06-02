@@ -2,6 +2,7 @@
 <items>
   <item Text="Prosjekter" NavigateUrl="Projects.aspx" />
   <item Text="Tilbud" NavigateUrl="Quotes.aspx"  />
-  <item Text="Produkter" NavigateUrl="Products.aspx"  />
+  <item Text="Ordre" NavigateUrl="Orders.aspx"  />
+  <item Text="Produkter" NavigateUrl="Products.aspx"  />  
   
 </items>

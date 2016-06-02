@@ -15,7 +15,7 @@
                     <Border BorderStyle="None" />
                 </CellStyle>
             </dx:GridViewCommandColumn>
-            <dx:GridViewDataTextColumn FieldName="Quote_ID" FixedStyle="Left" ReadOnly="True" ShowInCustomizationForm="True" Visible="False" VisibleIndex="1">
+            <dx:GridViewDataTextColumn FieldName="Quote_ID" FixedStyle="Left" ReadOnly="True" ShowInCustomizationForm="True" VisibleIndex="1">
                 <EditFormSettings Visible="False" />
                 <CellStyle HorizontalAlign="Left">
                     <Border BorderStyle="None" />
@@ -33,7 +33,7 @@
             <dx:GridViewDataTextColumn Caption="Pris" FieldName="Quote_Price" ShowInCustomizationForm="True" VisibleIndex="10">
                 <PropertiesTextEdit DisplayFormatInEditMode="True" DisplayFormatString="n">
                 </PropertiesTextEdit>
-                <CellStyle HorizontalAlign="Left">
+                <CellStyle HorizontalAlign="Right">
                     <Border BorderStyle="None" />
                 </CellStyle>
             </dx:GridViewDataTextColumn>
@@ -43,7 +43,7 @@
                 </CellStyle>
             </dx:GridViewDataTextColumn>
             <dx:GridViewDataTextColumn Caption="ProdTimer" FieldName="ProdHours" ShowInCustomizationForm="True" VisibleIndex="13">
-                <CellStyle HorizontalAlign="Left">
+                <CellStyle HorizontalAlign="Right">
                     <Border BorderStyle="None" />
                 </CellStyle>
             </dx:GridViewDataTextColumn>
@@ -75,7 +75,7 @@
                     <Border BorderStyle="None" />
                 </CellStyle>
             </dx:GridViewDataTextColumn>
-            <dx:GridViewDataDateColumn FieldName="LastModification" ShowInCustomizationForm="True" Visible="False" VisibleIndex="19">
+            <dx:GridViewDataDateColumn FieldName="LastModification" ShowInCustomizationForm="True" VisibleIndex="19">
                 <PropertiesDateEdit DisplayFormatString="dd. MMM yy">
                 </PropertiesDateEdit>
                 <SettingsHeaderFilter Mode="DateRangeCalendar">
@@ -84,11 +84,6 @@
                     <Border BorderStyle="None" />
                 </CellStyle>
             </dx:GridViewDataDateColumn>
-            <dx:GridViewDataTextColumn FieldName="Contact_ID" ShowInCustomizationForm="True" Visible="False" VisibleIndex="20">
-                <CellStyle HorizontalAlign="Left">
-                    <Border BorderStyle="None" />
-                </CellStyle>
-            </dx:GridViewDataTextColumn>
             <dx:GridViewDataTextColumn FieldName="ShippingCost" ShowInCustomizationForm="True" Visible="False" VisibleIndex="21">
                 <CellStyle HorizontalAlign="Left">
                     <Border BorderStyle="None" />
@@ -160,11 +155,18 @@
                     <Border BorderStyle="None" />
                 </CellStyle>
             </dx:GridViewDataComboBoxColumn>
-            <dx:GridViewDataComboBoxColumn Caption="ID" FieldName="Project_ID" ReadOnly="True" VisibleIndex="2">
+            <dx:GridViewDataComboBoxColumn Caption="ID" FieldName="Project_ID" VisibleIndex="2">
                 <PropertiesComboBox DataSourceID="dsProject" TextField="Project_ID" ValueField="Project_ID">
                 </PropertiesComboBox>
                 <SettingsHeaderFilter Mode="CheckedList">
                 </SettingsHeaderFilter>
+                <CellStyle HorizontalAlign="Left">
+                    <Border BorderStyle="None" />
+                </CellStyle>
+            </dx:GridViewDataComboBoxColumn>
+            <dx:GridViewDataComboBoxColumn FieldName="Contact_ID" VisibleIndex="20">
+                <PropertiesComboBox DataSourceID="dsContacts" TextField="Last_Name" ValueField="Contact_ID">
+                </PropertiesComboBox>
                 <CellStyle HorizontalAlign="Left">
                     <Border BorderStyle="None" />
                 </CellStyle>
